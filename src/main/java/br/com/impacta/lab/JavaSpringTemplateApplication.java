@@ -1,6 +1,7 @@
-package br.com.impacta.lab;
 
-import br.com.impacta.models.*;
+
+package br.com.impacta.lab;
+import br.com.impacta.models.Produto;
 
 public class JavaSpringTemplateApplication {
 
