@@ -2,6 +2,7 @@
 
 package br.com.impacta.lab;
 import br.com.impacta.models.Produto;
+import java.util.*;
 
 public class JavaSpringTemplateApplication {
 
@@ -36,12 +37,21 @@ public class JavaSpringTemplateApplication {
 		 * 
 		 * 
 		 */
-		
+	
+
 		Produto produto = new Produto();
 		produto.codigo = 1;
 		produto.descricao = "Camisa";
 		produto.valor = 70.00;
+
+    ArrayList<Produto> listaProduto = new ArrayList<Produto>();
+    listaProduto.add(produto);
 		
+    // for(int contador = 0; contador < listaProduto.size(); contador++){
+    //   produto objetoProduto = listaProduto.get(contador);
+    //   System.out.println(objetoProduto.montarResumo(contador));
+    // }
+
 		String resumo = produto.montarResumo(produto);
 		
 		System.out.println(resumo);

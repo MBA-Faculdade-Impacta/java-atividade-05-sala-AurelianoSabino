@@ -15,4 +15,14 @@ public class Produto{
 
   }
 
+  public void criarCodigo(int codigo){
+    this.codigo = codigo * 100;
+  }
+  
+  public int retonaCodigo(){
+    return this.codigo;
+  }
+
+
+
 }
